@@ -25,6 +25,6 @@ def check_image(image: np.array, new_height: int, new_width: int) -> np.array:
 
 
 blank_image = cv2.imread("blank_image.png")
-new_image = check_image(blank_image, 87, 152)
+new_image = check_image(blank_image, 256, 256)
 
 cv2.imwrite("new_image.png", new_image)
